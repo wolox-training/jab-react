@@ -1,0 +1,24 @@
+@import 'colors';
+
+@mixin title-theme($size, $weight: bold) {
+  font-size: $size;
+  font-weight: $weight;
+}
+
+body {
+  color: $gray;
+  margin: 10px;
+}
+
+strong {
+  color: $black;
+}
+
+.title {
+  @include title-theme(30px);
+}
+
+.gender {
+  @include title-theme(22px);
+  color: $gray;
+}
