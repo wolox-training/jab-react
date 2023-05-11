@@ -14,11 +14,16 @@ strong {
   color: $black;
 }
 
-.title {
-  @include title-theme(30px);
+.front-page {
+  display: inline-flex;
+  gap: 20px;
 }
 
 .gender {
   @include title-theme(22px);
   color: $gray;
+}
+
+.title {
+  @include title-theme(30px);
 }
