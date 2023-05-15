@@ -1,0 +1,31 @@
+@import 'colors';
+
+@mixin font-theme($size, $color: $black, $style: bold, $family: arial) {
+  color: $color;
+  font: $style $size $family;
+}
+
+body {
+  margin: 2%;
+}
+
+.title {
+  @include font-theme(x-large);
+}
+
+.gender {
+  @include font-theme(large, $gray);
+  margin-bottom: 40px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  @include font-theme(15px, $black, bold);
+}
+
+.content {
+  @include font-theme(15px, $gray, normal);
+}
