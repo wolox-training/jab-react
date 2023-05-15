@@ -9,6 +9,11 @@ body {
   margin: 2%;
 }
 
+.front-page {
+  display: inline-flex;
+  gap: 20px;
+}
+
 .title {
   @include font-theme(x-large);
 }
