@@ -1,17 +1,12 @@
 @import 'colors';
 
-@mixin title-theme($size, $weight: bold) {
-  font-size: $size;
-  font-weight: $weight;
+@mixin font-theme($size, $color: $black, $style: bold, $family: arial) {
+  color: $color;
+  font: $style $size $family;
 }
 
 body {
-  color: $gray;
-  margin: 10px;
-}
-
-strong {
-  color: $black;
+  margin: 2%;
 }
 
 .front-page {
@@ -19,11 +14,23 @@ strong {
   gap: 20px;
 }
 
-.gender {
-  @include title-theme(22px);
-  color: $gray;
+.title {
+  @include font-theme(x-large);
 }
 
-.title {
-  @include title-theme(30px);
+.gender {
+  @include font-theme(large, $gray);
+  margin-bottom: 40px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  @include font-theme(15px, $black, bold);
+}
+
+.content {
+  @include font-theme(15px, $gray, normal);
 }
