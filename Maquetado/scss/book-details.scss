@@ -2,6 +2,7 @@
 @import 'mixins';
 
 .front-page {
+  background-color: $white;
   box-shadow: 3px 3px 7px $gray;
   display: flex;
   gap: 25px;
