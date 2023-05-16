@@ -1,0 +1,24 @@
+@import 'colors';
+@import 'mixins';
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .item {
+    box-shadow: 3px 3px 7px $gray;
+    margin: 20px;
+    padding: 25px;
+
+    .book-title {
+      @include font-theme(medium);
+      margin-top: 8px;
+    }
+
+    .book-author {
+      @include font-theme(small, $gray, none);
+      margin-top: 5px;
+    }
+  }
+}

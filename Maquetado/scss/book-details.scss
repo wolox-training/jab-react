@@ -1,0 +1,51 @@
+@import 'colors';
+@import 'mixins';
+
+.front-page {
+  box-shadow: 3px 3px 7px $gray;
+  display: flex;
+  gap: 25px;
+  margin: 2%;
+  padding: 3%;
+
+  .image {
+    position: relative;
+
+    .badge-image {
+      position: absolute;
+      right: -12px;
+      top: -12px;
+      transform: rotate(15deg);
+    }
+  }
+
+  .description {
+    width: 100%;
+
+    .title {
+      border-bottom: 3px solid $earls-green;
+      margin-bottom: 30px;
+      padding-bottom: 1%;
+
+      .book-title {
+        @include font-theme(x-large);
+      }
+
+      .gender {
+        @include font-theme(large, $gray);
+      }
+    }
+
+    .subtitle {
+      @include font-theme(15px, $black, bold);
+    }
+
+    .content {
+      @include font-theme(15px, $gray, normal);
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
+}
