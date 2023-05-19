@@ -1,0 +1,57 @@
+@import 'colors';
+
+.login-body {
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+}
+
+.login {
+  background-color: $wild-sand;
+  border-top: 5px solid $cerulean;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 12.5%;
+  padding: 20px 30px;
+  width: 300px;
+
+  .logo-image {
+    margin: 8px;
+  }
+
+  .form-login {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 8% 0;
+    row-gap: 10px;
+
+    #email,
+    #password,
+    .login-buttom,
+    .sign-up-buttom {
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    .login-buttom,
+    .sign-up-buttom {
+      display: flex;
+      justify-content: center;
+    }
+
+    .login-buttom {
+      background-color: $earls-green;
+      margin-top: 15px;
+    }
+
+    .border-line {
+      border-top: 2px solid $gray;
+      margin: 10px 0;
+    }
+
+    .sign-up-buttom {
+      border: 2px solid $earls-green;
+      color: $earls-green;
+    }
+  }
+}
