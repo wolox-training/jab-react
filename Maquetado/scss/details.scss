@@ -10,17 +10,28 @@ body {
 }
 
 .front-page {
-  display: inline-flex;
+  box-shadow: 3px 3px 7px $gray;
+  display: flex;
   gap: 20px;
+  padding: 2%;
+}
+
+.description {
+  width: 100%;
 }
 
 .title {
+  border-bottom: 3px solid $earls-green;
+  margin-bottom: 30px;
+  padding-bottom: 1%;
+}
+
+.book-title {
   @include font-theme(x-large);
 }
 
 .gender {
   @include font-theme(large, $gray);
-  margin-bottom: 40px;
 }
 
 p {
