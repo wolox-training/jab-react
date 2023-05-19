@@ -1,0 +1,4 @@
+@mixin font-theme($size, $color: $black, $style: bold, $family: arial) {
+  color: $color;
+  font: $style $size $family;
+}
