@@ -1,12 +1,39 @@
 @import 'colors';
 @import 'mixins';
 
+body {
+  background-color: $wild-sand;
+}
+
+.nav-bar {
+  background-color: $white;
+  border-top: 5px solid $cerulean;
+  box-shadow: 0 3px 7px $gray;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  ul {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10%;
+  }
+
+  .logo-image {
+    height: 50px;
+    width: 160px;
+  }
+}
+
 .book-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 60px;
 
   .item {
+    background-color: $white;
     box-shadow: 3px 3px 7px $gray;
     margin: 20px;
     padding: 25px;
