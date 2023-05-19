@@ -1,13 +1,29 @@
 @import 'colors';
 @import 'mixins';
 
+.back-buttom {
+  display: flex;
+  align-items: center;
+  margin: 2% 8%;
+
+  .back-image {
+    transform: scale(1.2, 1.2);
+  }
+
+  .back-word {
+    font: 17px 'Roboto';
+    margin-left: 5px;
+  }
+}
+
 .front-page {
   background-color: $white;
   box-shadow: 3px 3px 7px $gray;
   display: flex;
   gap: 25px;
-  margin: 2%;
+  margin: 2% 12.5%;
   padding: 3%;
+  width: 75%;
 
   .image {
     position: relative;
