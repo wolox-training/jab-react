@@ -12,8 +12,19 @@ body {
 .front-page {
   box-shadow: 3px 3px 7px $gray;
   display: flex;
-  gap: 20px;
-  padding: 2%;
+  gap: 25px;
+  padding: 3%;
+}
+
+.image {
+  position: relative;
+}
+
+.badge-image {
+  position: absolute;
+  right: -12px;
+  top: -12px;
+  transform: rotate(15deg);
 }
 
 .description {
